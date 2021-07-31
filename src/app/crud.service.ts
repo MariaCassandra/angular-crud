@@ -31,7 +31,7 @@ export class CrudService {
   //add new user
   public adduser(userData: any)
   {
-    return this.http.post('http://localhost/users.php/', userData).subscribe((res) => {
+    return this.http.post('http://localhost/users.php/', userData).subscribe((res:any) => {
     console.log(res);
   });
   }
