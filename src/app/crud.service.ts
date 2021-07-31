@@ -31,7 +31,7 @@ export class CrudService {
   //add new user
   public adduser(userData: any)
   {
-    return this.http.post('users.php', userData).subscribe((res) => {
+    return this.http.post('http://localhost/users.php/', userData).subscribe((res) => {
     console.log(res);
   });
   }
@@ -39,7 +39,7 @@ export class CrudService {
   //delete user
   public deleteuser(userid:any)
   {
-    return this.http.post('users.php'
+    return this.http.post('http://localhost/users.php/'
     , userid).subscribe((res: any) => {});
   }
 
@@ -48,7 +48,7 @@ export class CrudService {
   //get single user
   public getsingleuser(userid:any)
   {
-    return this.http.post('users.php'
+    return this.http.post('http://localhost/users.php/'
     , userid).subscribe((res: any) => {
       this.singleuserdata = res[0];
       console.log( this.singleuserdata);
@@ -58,7 +58,7 @@ export class CrudService {
   //update user
   public updateuser(userid:any )
   {
-    return this.http.post('users.php/'
+    return this.http.post('http://localhost/users.php/'
     , userid).subscribe((res:any) => {});
   }
 

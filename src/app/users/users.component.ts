@@ -34,7 +34,7 @@ deleteuser(id:any)
   myFormData.append('deleteid', id);
 
   this.crudservice.deleteuser(myFormData);
-  //sweetalert message popup
+  //sweetalert message popup left away because it didn't work at all
   this.loaddata();
 }
 }
