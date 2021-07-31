@@ -39,7 +39,7 @@ onSubmit() {
       myFormData.append('myUsername', this.registerForm.value.firstname);
       myFormData.append('myEmail', this.registerForm.value.email);
     
-      this.crudservice.adduser(myFormData); //caaling add user service
+      this.crudservice.adduser(myFormData); //calling add user service
       this.router.navigate([`/users`]); //after form submit page will redirect to users page
   }
  

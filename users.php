@@ -6,9 +6,9 @@ header('Content-Type: application/json');
 
 //Please create users database inside phpmysql admin and create userdetails table and create id, email and username fields
 $servername = "localhost";
-$username   = "id17279705_root";
-$password   = "lL{YQUYRm]b72#1*";
-$dbname     = "id17279705_users";
+$username   = "root";
+$password   = "";
+$dbname     = "users";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
